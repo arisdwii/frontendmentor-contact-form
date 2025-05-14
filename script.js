@@ -102,6 +102,7 @@ form.addEventListener("submit", (e) => {
     // Uncheck all radio buttons
     selectQuerys.forEach((selectQuery) => {
       selectQuery.checked = false;
+      selectQuery.closest(".input-radio").classList.remove("active");
     });
   }
 });
